@@ -1,7 +1,7 @@
 consulate-scrypt [![Build Status](https://travis-ci.org/consulate/consulate-scrypt.png?branch=master)](https://travis-ci.org/consulate/consulate-scrypt)
 ================
 
-scrypt password hashing plugin for [consulate](https://github.com/consulate/consulate)
+scrypt password verification plugin for [consulate](https://github.com/consulate/consulate)
 
 Usage
 -----

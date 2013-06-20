@@ -43,7 +43,6 @@ describe('consulate-scrypt', function() {
     });
   });
 
-
   it("should accept a correct password", function(done) {
     var instance = scrypt({})(app);
 
