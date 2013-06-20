@@ -5,7 +5,7 @@ var scrypt = require("scrypt").verifyHash;
 
 module.exports = function(options) {
   return function(app) {
-    app.hashPassword(function(password, user, done) {
+    app.verifyPassword(function(user, password, done) {
       scrypt(user.passhash, password, function(err, result) {
         if (err) return done(err);
         done(null, result);
