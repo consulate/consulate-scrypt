@@ -1,7 +1,7 @@
 /**
  * Module dependencies
  */
-var scrypt = require("scrypt").verifyHash;
+var scrypt = require('scrypt').verifyHash;
 
 module.exports = function(options) {
   return function(app) {
@@ -12,6 +12,7 @@ module.exports = function(options) {
         // an error page so we need to check for the
         // 'password is incorrect' message and send only a boolean
         if (err && err.message === 'password is incorrect') return done(null, false);
+        if (err && err.message === 'data is not a valid scrypt-encrypted block') return done('pass');
         done(err, result);
       });
     });
