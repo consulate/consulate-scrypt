@@ -1,6 +1,6 @@
 {
   "name": "consulate-scrypt",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "scrypt password hashing plugin for consulate",
   "main": "index.js",
   "scripts": {
@@ -18,7 +18,7 @@
     "consulate",
     "password"
   ],
-  "author": "Cameron Bytheway <cameron@theflokk.com>",
+  "author": "Cameron Bytheway <bytheway.cameron@gmail.com>",
   "license": "MIT",
   "readmeFilename": "README.md",
   "dependencies": {
